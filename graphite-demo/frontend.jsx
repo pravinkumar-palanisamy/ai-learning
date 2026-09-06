@@ -7,6 +7,8 @@ const TaskAndUserSearch = () => {
   const [error, setError] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
 
+  const PASSWORD = "dsfrewersd123124143";
+
   useEffect(() => {
     setLoading(true);
     fetch(`/search?query=${encodeURIComponent(searchQuery)}`)
